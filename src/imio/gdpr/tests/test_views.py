@@ -40,7 +40,6 @@ class TesViews(unittest.TestCase):
             id='mentions-legales',
             language='en'
         )
-        # gdpr_file.setLanguage('en')
         rtv = RichTextValue('My New GDPR text')
         gdpr_file.text = rtv
         gdpr_file.reindexObject()
