@@ -44,7 +44,7 @@ setup(
         'Products.GenericSetup>=1.8.2',
         'setuptools',
         'z3c.jbot',
-        'plone.app.dexterity<=2.1.1',
+        'plone.app.dexterity',
         'plone.app.referenceablebehavior',
         'plone.app.relationfield',
         'plone.app.lockingbehavior',
@@ -53,10 +53,11 @@ setup(
     extras_require={
         'test': [
             'plone.app.testing',
+            'plone.app.contenttypes',
             # Plone KGS does not use this version, because it would break
             # Remove if your package shall be part of coredev.
             # plone_coredev tests as of 2016-04-01.
-            'plone.testing>=5.0.0',
+            'plone.testing',
             'plone.app.robotframework[debug]',
         ],
     },

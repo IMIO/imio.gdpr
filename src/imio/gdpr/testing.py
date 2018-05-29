@@ -1,18 +1,18 @@
 # -*- coding: utf-8 -*-
 from imio.gdpr.interfaces import IImioGdprLayer
+from plone.app.contenttypes.testing import PLONE_APP_CONTENTTYPES_FIXTURE as PLONE_FIXTURE  # noqa
 from plone.app.robotframework.testing import REMOTE_LIBRARY_BUNDLE_FIXTURE
 from plone.app.testing import applyProfile
 from plone.app.testing import FunctionalTesting
 from plone.app.testing import IntegrationTesting
-from plone.app.testing import PLONE_FIXTURE
-from plone.app.testing import PloneSandboxLayer
+from plone.app.testing import PloneWithPackageLayer
 from plone.testing import z2
 from zope.interface import directlyProvides
 
 import imio.gdpr
 
 
-class ImioGdprLayer(PloneSandboxLayer):
+class ImioGdprLayer(PloneWithPackageLayer):
 
     defaultBases = (PLONE_FIXTURE,)
 
@@ -29,7 +29,12 @@ class ImioGdprLayer(PloneSandboxLayer):
         applyProfile(portal, 'imio.gdpr:default')
 
 
-IMIO_GDPR_FIXTURE = ImioGdprLayer()
+IMIO_GDPR_FIXTURE = ImioGdprLayer(
+    name='IMIO_GDPR_FIXTURE',
+    zcml_filename='testing.zcml',
+    zcml_package=imio.gdpr,
+    gs_profile_id='imio.gdpr:testing'
+)
 
 
 IMIO_GDPR_INTEGRATION_TESTING = IntegrationTesting(

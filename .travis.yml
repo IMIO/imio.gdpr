@@ -7,9 +7,13 @@ cache:
   - downloads
 python:
   - "2.7"
+env:
+  - PLONE_VERSION=4.3
+  - PLONE_VERSION=5.1
 matrix:
   fast_finish: true
 install:
+  - sed -ie "s#4.3-latest#$PLONE_VERSION-latest#" buildout.cfg
   - virtualenv -p `which python` .
   - bin/pip install -r requirements.txt
   - bin/buildout -N buildout:download-cache=downloads code-analysis:return-status-codes=True annotate

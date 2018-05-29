@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 """Init and utils."""
 from plone import api
-from Products.CMFDefault.utils import bodyfinder
+from Products.PortalTransforms.libtransforms.utils import bodyfinder
 from zope.i18nmessageid import MessageFactory
 from zope.interface import provider
 from zope.schema.interfaces import IContextAwareDefaultFactory

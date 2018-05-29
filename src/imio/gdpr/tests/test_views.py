@@ -3,6 +3,7 @@
 from AccessControl import Unauthorized
 from imio.gdpr.testing import IMIO_GDPR_INTEGRATION_TESTING
 from plone import api
+from plone.app.testing import logout
 from plone.app.testing import setRoles
 from plone.app.testing import TEST_USER_ID
 from plone.app.textfield.value import RichTextValue
@@ -36,8 +37,10 @@ class TesViews(unittest.TestCase):
             type='Document',
             title='My Content',
             container=self.portal,
-            id='mentions-legales'
+            id='mentions-legales',
+            language='en'
         )
+        # gdpr_file.setLanguage('en')
         rtv = RichTextValue('My New GDPR text')
         gdpr_file.text = rtv
         gdpr_file.reindexObject()
@@ -62,5 +65,6 @@ class TesViews(unittest.TestCase):
         self.assertTrue(view())
         self.assertTrue('Hello GDPR' in view())
         setRoles(self.portal, TEST_USER_ID, roles_before)
+        logout()
         with self.assertRaises(Unauthorized):
             self.portal.restrictedTraverse('@@gdpr-settings')
