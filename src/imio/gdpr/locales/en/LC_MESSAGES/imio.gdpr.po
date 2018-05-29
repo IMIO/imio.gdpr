@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2018-05-29 08:45+0000\n"
+"POT-Creation-Date: 2018-05-29 09:26+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI +ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -27,8 +27,11 @@ msgid "Installs the imio.gdpr add-on."
 msgstr ""
 
 #: ../browser/controlpanel.py:12
-msgid "Show GDPR explication."
-msgstr ""
+msgid "Show GDPR explanation."
+msgstr "Default GDPR explanation. If you add
+   - gdpr-explanation
+   - mentions-legales
+file on root of you site, this page will be used."
 
 #: ../configure.zcml:38
 msgid "Uninstalls the imio.gdpr add-on."

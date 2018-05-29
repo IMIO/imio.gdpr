@@ -1,4 +1,5 @@
 # -*- coding: utf-8 -*-
+from imio.gdpr.interfaces import IImioGdprLayer
 from plone.app.robotframework.testing import REMOTE_LIBRARY_BUNDLE_FIXTURE
 from plone.app.testing import applyProfile
 from plone.app.testing import FunctionalTesting
@@ -6,6 +7,7 @@ from plone.app.testing import IntegrationTesting
 from plone.app.testing import PLONE_FIXTURE
 from plone.app.testing import PloneSandboxLayer
 from plone.testing import z2
+from zope.interface import directlyProvides
 
 import imio.gdpr
 
@@ -23,6 +25,7 @@ class ImioGdprLayer(PloneSandboxLayer):
         self.loadZCML(package=imio.gdpr)
 
     def setUpPloneSite(self, portal):
+        directlyProvides(portal.REQUEST, IImioGdprLayer)  # noqa
         applyProfile(portal, 'imio.gdpr:default')
 
 

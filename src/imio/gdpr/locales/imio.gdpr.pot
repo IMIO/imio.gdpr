@@ -4,7 +4,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2018-05-29 08:45+0000\n"
+"POT-Creation-Date: 2018-05-29 09:28+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI +ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -30,7 +30,7 @@ msgid "Installs the imio.gdpr add-on."
 msgstr ""
 
 #: ../browser/controlpanel.py:12
-msgid "Show GDPR explication."
+msgid "Show GDPR explanation."
 msgstr ""
 
 #: ../configure.zcml:38

@@ -1,9 +1,11 @@
 # -*- coding: utf-8 -*-
 """Setup tests for this package."""
+from imio.gdpr.interfaces import IGDPRSettings
+from imio.gdpr.interfaces import IImioGdprLayer
+from imio.gdpr.testing import IMIO_GDPR_INTEGRATION_TESTING
 from plone import api
 from plone.app.testing import setRoles
 from plone.app.testing import TEST_USER_ID
-from imio.gdpr.testing import IMIO_GDPR_INTEGRATION_TESTING  # noqa
 
 import unittest
 
@@ -25,12 +27,17 @@ class TestSetup(unittest.TestCase):
 
     def test_browserlayer(self):
         """Test that IImioGdprLayer is registered."""
-        from imio.gdpr.interfaces import (
-            IImioGdprLayer)
         from plone.browserlayer import utils
         self.assertIn(
             IImioGdprLayer,
             utils.registered_layers())
+
+    def test_default_value(self):
+        record = api.portal.get_registry_record(
+            'text',
+            interface=IGDPRSettings
+        )
+        self.assertEqual(record, u'Hello GDPR')
 
 
 class TestUninstall(unittest.TestCase):
@@ -52,8 +59,6 @@ class TestUninstall(unittest.TestCase):
 
     def test_browserlayer_removed(self):
         """Test that IImioGdprLayer is removed."""
-        from imio.gdpr.interfaces import \
-            IImioGdprLayer
         from plone.browserlayer import utils
         self.assertNotIn(
             IImioGdprLayer,
