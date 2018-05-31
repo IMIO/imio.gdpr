@@ -9,7 +9,12 @@ from zope.schema.interfaces import IContextAwareDefaultFactory
 
 _ = MessageFactory('imio.gdpr')
 IS_PLONE4 = api.env.plone_version().startswith('4.3')
-DEFAULT_GDPR_FILES = ['gdpr-explanation', 'mentions-legales']
+DEFAULT_GDPR_FILES = [
+    'gdpr-explanation',
+    'mentions-legales',
+    'mentions-legales-nl',
+    'mentions-legales-en',
+]
 
 
 @provider(IContextAwareDefaultFactory)
