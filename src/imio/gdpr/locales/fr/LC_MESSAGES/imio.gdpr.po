@@ -28,12 +28,12 @@ msgstr ""
 
 #: ../browser/controlpanel.py:12
 msgid "Show GDPR explanation."
-msgstr "Voir les explications sur le RGPD. Si vous ajouté un fichier avec identifiant
-  - gdpr-explanation
-  - mentions-legales
-  - mentions-legales-nl
-  - mentions-legales-en
-à la racine de votre site, cette page sera utilisée."
+msgstr "Voir les explications sur le RGPD. Si vous ajouté un fichier avec identifiant\n"
+"  - gdpr-explanation\n"
+"  - mentions-legales\n"
+"  - mentions-legales-nl\n"
+"  - mentions-legales-en\n"
+"à la racine de votre site, cette page sera utilisée."
 
 #: ../configure.zcml:38
 msgid "Uninstalls the imio.gdpr add-on."
