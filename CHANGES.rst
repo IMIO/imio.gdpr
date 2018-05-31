@@ -5,7 +5,8 @@ Changelog
 1.0a3 (unreleased)
 ------------------
 
-- Nothing changed yet.
+- Use view instead of page.
+  [bsuttor]
 
 
 1.0a2 (2018-05-31)

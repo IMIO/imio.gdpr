@@ -20,7 +20,7 @@ msgstr "RGPD"
 
 #: ../browser/controlpanel.py:11
 msgid "GDPR settings"
-msgstr ""
+msgstr "Paramètre du RGPD"
 
 #: ../configure.zcml:29
 msgid "Installs the imio.gdpr add-on."
@@ -28,11 +28,11 @@ msgstr ""
 
 #: ../browser/controlpanel.py:12
 msgid "Show GDPR explanation."
-msgstr "Voir les explications sur le RGPD. Si vous ajouté un fichier avec identifiant\n"
-"  - gdpr-explanation\n"
-"  - mentions-legales\n"
-"  - mentions-legales-nl\n"
-"  - mentions-legales-en\n"
+msgstr "Voir les explications sur le RGPD. Si vous ajouté un fichier avec identifiant<br />\n"
+"  - gdpr-explanation<br />\n"
+"  - mentions-legales<br />\n"
+"  - mentions-legales-nl<br />\n"
+"  - mentions-legales-en<br />\n"
 "à la racine de votre site, cette page sera utilisée."
 
 #: ../configure.zcml:38
@@ -47,7 +47,7 @@ msgstr ""
 #. Default: "The text of the GDPR explanation."
 #: ../interfaces.py:26
 msgid "help_text"
-msgstr ""
+msgstr "Texte par defaut pour expliquer le RGPD lorsqu'un internaute clique sur Mentions Légales"
 
 #: ../configure.zcml:29
 msgid "imio.gdpr"
@@ -60,4 +60,4 @@ msgstr ""
 #. Default: "Body text"
 #: ../interfaces.py:25
 msgid "title_text"
-msgstr ""
+msgstr "Texte explicatif"

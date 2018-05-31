@@ -18,7 +18,7 @@
       directory="static"
       />
 
-  <browser:page
+  <browser:view
       for="*"
       name="gdpr-view"
       permission="zope2.Public"

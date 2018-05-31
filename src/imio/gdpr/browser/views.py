@@ -19,16 +19,25 @@ class GDPRView(BrowserView):
         self.context = context
         self.request = request
 
-    def content(self):
-        text = ''
+    def __call__(self):
         nav_root = api.portal.get_navigation_root(self.context)
         for filename in DEFAULT_GDPR_FILES:
             gdpr_file = getattr(nav_root, filename, None)
             if gdpr_file and gdpr_file.Language() == self.context.Language():  # noqa
-                text = gdpr_file.text.raw
-        if not text:
-            text = api.portal.get_registry_record(
-                'text',
-                interface=IGDPRSettings
-            )
+                #text = gdpr_file.text.raw
+                return self.request.response.redirect(gdpr_file.absolute_url())
+        return self.index()
+
+    def content(self):
+        text = ''
+        # for filename in DEFAULT_GDPR_FILES:
+        #     gdpr_file = getattr(nav_root, filename, None)
+        #     if gdpr_file and gdpr_file.Language() == self.context.Language():  # noqa
+        #         text = gdpr_file.text.raw
+        #         # return self.request.response.redirect(gdpr_file.absolute_url())
+        # if not text:
+        text = api.portal.get_registry_record(
+            'text',
+            interface=IGDPRSettings
+        )
         return text
