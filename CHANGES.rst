@@ -5,7 +5,8 @@ Changelog
 1.0a2 (unreleased)
 ------------------
 
-- Nothing changed yet.
+- Fix i18n compilation.
+  [bsuttor]
 
 
 1.0a1 (2018-05-31)
