@@ -29,3 +29,12 @@ class IGDPRSettings(model.Schema):
         required=True,
         defaultFactory=get_default_text,
     )
+
+    is_text_ready = schema.Bool(
+        title=_(u'is_text_ready_text', default=u'Is text ready ?'),
+        description=_(
+            u'help_is_text_ready',
+            default=u'Is text is not ready, it should not be visible'),
+        required=True,
+        default=False,
+    )

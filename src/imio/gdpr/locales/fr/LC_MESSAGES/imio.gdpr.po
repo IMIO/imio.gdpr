@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2018-05-31 11:06+0000\n"
+"POT-Creation-Date: 2018-06-13 14:05+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI +ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -24,11 +24,12 @@ msgstr "Paramètre du RGPD"
 
 #: ../configure.zcml:29
 msgid "Installs the imio.gdpr add-on."
-msgstr ""
+msgstr "Installs le module imio.gdpr"
 
 #: ../browser/controlpanel.py:12
 msgid "Show GDPR explanation."
-msgstr "Voir les explications sur le RGPD. Si vous ajouté un fichier avec identifiant<br />\n"
+msgstr ""
+"Voir les explications sur le RGPD. Si vous ajouté un fichier avec identifiant<br />\n"
 "  - gdpr-explanation<br />\n"
 "  - mentions-legales<br />\n"
 "  - mentions-legales-nl<br />\n"
@@ -37,12 +38,17 @@ msgstr "Voir les explications sur le RGPD. Si vous ajouté un fichier avec ident
 
 #: ../configure.zcml:38
 msgid "Uninstalls the imio.gdpr add-on."
-msgstr ""
+msgstr "Désinstaller imio.gdpr module"
 
-#. Default: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+#. Default: "bsuttor test Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
 #: ../browser/default_gdpr_text.pt:10
 msgid "default-gdpr-text"
 msgstr ""
+
+#. Default: "Is text is not ready, it should not be visible"
+#: ../interfaces.py:35
+msgid "help_is_text_ready"
+msgstr "Si le texte n'est prêt, il ne sera pas visible"
 
 #. Default: "The text of the GDPR explanation."
 #: ../interfaces.py:26
@@ -51,11 +57,16 @@ msgstr "Texte par defaut pour expliquer le RGPD lorsqu'un internaute clique sur 
 
 #: ../configure.zcml:29
 msgid "imio.gdpr"
-msgstr ""
+msgstr "imio.gdpr"
 
 #: ../configure.zcml:38
 msgid "imio.gdpr (uninstall)"
-msgstr ""
+msgstr "imio.gdpr (désinstaller)"
+
+#. Default: "Is text ready ?"
+#: ../interfaces.py:34
+msgid "is_text_ready_text"
+msgstr "Le text est-il prêt ?"
 
 #. Default: "Body text"
 #: ../interfaces.py:25

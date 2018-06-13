@@ -5,7 +5,8 @@ Changelog
 1.0a4 (unreleased)
 ------------------
 
-- Nothing changed yet.
+- Add is_text_ready record.
+  [bsuttor]
 
 
 1.0a3 (2018-05-31)

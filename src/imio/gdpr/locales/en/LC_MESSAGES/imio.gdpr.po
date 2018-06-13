@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2018-05-31 11:06+0000\n"
+"POT-Creation-Date: 2018-06-13 14:05+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI +ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -28,7 +28,8 @@ msgstr ""
 
 #: ../browser/controlpanel.py:12
 msgid "Show GDPR explanation."
-msgstr "Default GDPR explanation. If you add\n"
+msgstr ""
+"Default GDPR explanation. If you add\n"
 "   - gdpr-explanation\n"
 "   - mentions-legales\n"
 "   - mentions-legales-en\n"
@@ -39,9 +40,14 @@ msgstr "Default GDPR explanation. If you add\n"
 msgid "Uninstalls the imio.gdpr add-on."
 msgstr ""
 
-#. Default: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+#. Default: "bsuttor test Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
 #: ../browser/default_gdpr_text.pt:10
 msgid "default-gdpr-text"
+msgstr ""
+
+#. Default: "Is text is not ready, it should not be visible"
+#: ../interfaces.py:35
+msgid "help_is_text_ready"
 msgstr ""
 
 #. Default: "The text of the GDPR explanation."
@@ -55,6 +61,11 @@ msgstr ""
 
 #: ../configure.zcml:38
 msgid "imio.gdpr (uninstall)"
+msgstr ""
+
+#. Default: "Is text ready ?"
+#: ../interfaces.py:34
+msgid "is_text_ready_text"
 msgstr ""
 
 #. Default: "Body text"
