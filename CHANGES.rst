@@ -2,7 +2,7 @@ Changelog
 =========
 
 
-1.0a4 (unreleased)
+1.0a4 (2018-06-13)
 ------------------
 
 - Add is_text_ready record.
