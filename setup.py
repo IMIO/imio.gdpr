@@ -59,6 +59,7 @@ setup(
             # plone_coredev tests as of 2016-04-01.
             'plone.testing',
             'plone.app.robotframework[debug]',
+            'ipdb',
         ],
     },
     entry_points="""

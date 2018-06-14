@@ -21,6 +21,7 @@ class GDPRView(BrowserView):
 
     def __call__(self):
         nav_root = api.portal.get_navigation_root(self.context)
+        # import ipdb; ipdb.set_trace()
         for filename in DEFAULT_GDPR_FILES:
             gdpr_file = getattr(nav_root, filename, None)
             if gdpr_file and gdpr_file.Language() == self.context.Language():  # noqa

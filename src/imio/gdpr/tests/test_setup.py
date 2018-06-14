@@ -37,7 +37,7 @@ class TestSetup(unittest.TestCase):
             'text',
             interface=IGDPRSettings
         )
-        self.assertEqual(record, u'Hello GDPR')
+        self.assertIn(u'<h2>D\xe9claration relative', record)
 
 
 class TestUninstall(unittest.TestCase):

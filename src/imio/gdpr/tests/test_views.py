@@ -28,9 +28,17 @@ class TesViews(unittest.TestCase):
             request=self.portal.REQUEST,
         )
         content = view.content()
-        self.assertIn(content, u'Hello GDPR')
+        self.assertTrue(content.startswith('<h2>'))  # noqa
 
     def test_gdpr_file_view(self):
+        view = api.content.get_view(
+            name='gdpr-view',
+            context=self.portal,
+            request=self.portal.REQUEST,
+        )
+        called_view = view()
+        self.assertIn(u'<h2>D\xe9claration relative', called_view)  # noqa
+
         roles_before = api.user.get_roles(TEST_USER_ID)
         setRoles(self.portal, TEST_USER_ID, ['Manager'])
         gdpr_file = api.content.create(
@@ -49,8 +57,8 @@ class TesViews(unittest.TestCase):
             context=self.portal,
             request=self.portal.REQUEST,
         )
-        content = view.content()
-        self.assertEqual(content, u'My New GDPR text')
+        called_view = view()
+        self.assertEqual(called_view, 'http://nohost/plone/mentions-legales')
 
     def test_control_panel_view(self):
         roles_before = api.user.get_roles(TEST_USER_ID)
@@ -62,7 +70,8 @@ class TesViews(unittest.TestCase):
         )
         view = view.__of__(self.portal)
         self.assertTrue(view())
-        self.assertTrue('Hello GDPR' in view())
+        # import ipdb; ipdb.set_trace()
+        self.assertTrue(u'administration communale' in view())
         setRoles(self.portal, TEST_USER_ID, roles_before)
         logout()
         with self.assertRaises(Unauthorized):
