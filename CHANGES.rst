@@ -2,7 +2,7 @@ Changelog
 =========
 
 
-1.0a5 (unreleased)
+1.0.0 (2018-06-14)
 ------------------
 
 - Update gdpr default template.
