@@ -5,7 +5,8 @@ Changelog
 1.0a5 (unreleased)
 ------------------
 
-- Nothing changed yet.
+- Update gdpr default template.
+  [bsuttor]
 
 
 1.0a4 (2018-06-13)

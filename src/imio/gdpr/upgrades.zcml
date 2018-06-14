@@ -13,4 +13,14 @@
     />
 
 
+  <genericsetup:upgradeStep
+    source="1001"
+    destination="1002"
+    title="Update GDPR default template"
+    description=""
+    profile="imio.gdpr:default"
+    handler=".upgrades.udpate_default_template"
+    />
+
+
 </configure>
