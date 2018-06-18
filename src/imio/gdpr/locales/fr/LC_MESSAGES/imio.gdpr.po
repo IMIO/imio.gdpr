@@ -29,12 +29,12 @@ msgstr "Installs le module imio.gdpr"
 #: ../browser/controlpanel.py:12
 msgid "Show GDPR explanation."
 msgstr ""
-"Voir les explications sur le RGPD. Si vous ajouté un fichier avec identifiant<br />\n"
-"  - gdpr-explanation<br />\n"
-"  - mentions-legales<br />\n"
-"  - mentions-legales-nl<br />\n"
-"  - mentions-legales-en<br />\n"
-"à la racine de votre site, cette page sera utilisée."
+"Le texte ci-dessous peut être surchargé en créant des documents avec les identifiants suivants à la racine du site:<br />\n"
+"- gdpr-explanation<br />\n"
+"- mentions-legales<br />\n"
+"- mentions-legales-nl<br />\n"
+"- mentions-legales-en<br />\n"
+"C'est surtout utile pour les sites multilingues."
 
 #: ../configure.zcml:38
 msgid "Uninstalls the imio.gdpr add-on."
@@ -48,12 +48,12 @@ msgstr ""
 #. Default: "Is text is not ready, it should not be visible"
 #: ../interfaces.py:35
 msgid "help_is_text_ready"
-msgstr "Si le texte n'est prêt, il ne sera pas visible"
+msgstr "Cocher la case si vous souhaitez afficher le lien \"Mentions légales\" dans le footer du site et rendre le texte accessible"
 
 #. Default: "The text of the GDPR explanation."
 #: ../interfaces.py:26
 msgid "help_text"
-msgstr "Texte par defaut pour expliquer le RGPD lorsqu'un internaute clique sur Mentions Légales"
+msgstr "Le texte ci-dessous sera disponible pour l'internaute via un lien \"mentions légales\" placé automatiquement dans le footer du site"
 
 #: ../configure.zcml:29
 msgid "imio.gdpr"
@@ -66,9 +66,9 @@ msgstr "imio.gdpr (désinstaller)"
 #. Default: "Is text ready ?"
 #: ../interfaces.py:34
 msgid "is_text_ready_text"
-msgstr "Le text est-il prêt ?"
+msgstr "Publier le texte"
 
 #. Default: "Body text"
 #: ../interfaces.py:25
 msgid "title_text"
-msgstr "Texte explicatif"
+msgstr "Mentions légales"
