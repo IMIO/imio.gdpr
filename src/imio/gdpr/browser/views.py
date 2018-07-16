@@ -28,9 +28,8 @@ class GDPRView(BrowserView):
         return self.index()
 
     def content(self):
-        text = ''
         text = api.portal.get_registry_record(
-            'text',
-            interface=IGDPRSettings
+            'imio.gdpr.interfaces.IGDPRSettings.text',
+            default='',
         )
         return text
