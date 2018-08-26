@@ -7,7 +7,7 @@
   metal:use-macro="context/main_template/macros/master">
 
   <metal:block fill-slot="content">
-    <div tal:content="structure view/content"/>
+    <div id="content" tal:content="structure view/content"/>
   </metal:block>
 
 </html>

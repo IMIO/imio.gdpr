@@ -5,7 +5,8 @@ Changelog
 1.0.3 (unreleased)
 ------------------
 
-- Nothing changed yet.
+- Inherit from website content styles
+  [mpeeters]
 
 
 1.0.2 (2018-07-16)
