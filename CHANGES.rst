@@ -2,7 +2,7 @@ Changelog
 =========
 
 
-1.0.3 (unreleased)
+1.0.3 (2018-08-26)
 ------------------
 
 - Inherit from website content styles
