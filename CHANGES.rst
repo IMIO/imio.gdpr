@@ -5,8 +5,8 @@ Changelog
 1.0.4 (unreleased)
 ------------------
 
-- Nothing changed yet.
-
+- Add css for document.
+  [mgennart]
 
 1.0.3 (2018-08-26)
 ------------------

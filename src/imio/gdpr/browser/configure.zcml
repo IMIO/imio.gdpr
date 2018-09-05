@@ -12,9 +12,9 @@
       />
 
   <!-- Publish static files -->
-  <plone:static
+  <browser:resourceDirectory
       name="imio.gdpr"
-      type="plone"
+      layer="imio.gdpr.interfaces.IImioGdprLayer"
       directory="static"
       />
 
