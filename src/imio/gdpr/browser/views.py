@@ -1,6 +1,5 @@
 # -*- coding: utf-8 -*-
 from imio.gdpr import DEFAULT_GDPR_FILES
-from imio.gdpr.interfaces import IGDPRSettings
 from plone import api
 from Products.Five.browser import BrowserView
 from Products.Five.browser.pagetemplatefile import ViewPageTemplateFile
