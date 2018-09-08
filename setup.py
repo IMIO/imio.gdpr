@@ -49,6 +49,7 @@ setup(
         'plone.app.relationfield',
         'plone.app.lockingbehavior',
         'plone.schema',
+        'collective.lesscss',
     ],
     extras_require={
         'test': [

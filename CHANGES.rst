@@ -5,6 +5,9 @@ Changelog
 1.0.4 (unreleased)
 ------------------
 
+- Fix missing dependency (breaks cpskin.core tests)
+  [laulaz]
+
 - Add css for document.
   [mgennart]
 

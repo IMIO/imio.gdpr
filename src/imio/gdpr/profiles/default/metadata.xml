@@ -2,6 +2,7 @@
 <metadata>
   <version>1002</version>
   <dependencies>
+    <dependency>profile-collective.lesscss:default</dependency>
     <!--dependency>profile-plone.app.contenttypes:default</dependency-->
   </dependencies>
 </metadata>
