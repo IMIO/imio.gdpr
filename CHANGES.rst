@@ -5,6 +5,9 @@ Changelog
 1.0.4 (unreleased)
 ------------------
 
+- Fix WrongType when inserting string in registry
+  [laulaz]
+
 - Fix missing dependency (breaks cpskin.core tests)
   [laulaz]
 
