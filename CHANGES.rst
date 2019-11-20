@@ -2,7 +2,7 @@ Changelog
 =========
 
 
-1.0.4 (unreleased)
+1.0.4 (2019-11-20)
 ------------------
 
 - Fix WrongType when inserting string in registry
