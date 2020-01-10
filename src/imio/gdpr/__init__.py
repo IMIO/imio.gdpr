@@ -33,5 +33,7 @@ def get_default_text(context):
         )
         if view is not None:
             text = bodyfinder(view.index()).strip()
-            return text.decode("utf-8")
+            if not isinstance(text, unicode):
+                text = text.decode("utf-8")
+            return text
     return u''

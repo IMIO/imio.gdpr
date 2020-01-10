@@ -5,7 +5,8 @@ Changelog
 1.0.5 (unreleased)
 ------------------
 
-- Nothing changed yet.
+- Avoid UnicodeEncodeError if gdpr text browser view is already Unicode
+  [laulaz]
 
 
 1.0.4 (2019-11-20)
