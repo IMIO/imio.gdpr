@@ -46,7 +46,6 @@ setup(
         'z3c.jbot',
         'plone.app.dexterity',
         'plone.schema',
-        'collective.lesscss',
     ],
     extras_require={
         'test': [

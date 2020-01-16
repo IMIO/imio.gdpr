@@ -13,8 +13,6 @@
   -->
   <!--<includeDependencies package="." />-->
 
-  <include package="collective.lesscss" />
-
   <include package=".browser" />
 
   <include file="permissions.zcml" />
