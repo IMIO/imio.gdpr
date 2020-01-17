@@ -7,7 +7,6 @@ cache:
   - downloads
 python:
   - "2.7"
-  - "3.7"
 matrix:
   include:
     - python: "2.7"
