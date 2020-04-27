@@ -6,7 +6,7 @@
 imio.gdpr
 =========
 
-Tell me what your product does
+View and configuration panel to set GDPR information
 
 Features
 --------
@@ -68,9 +68,9 @@ and then running ``bin/buildout``
 Contribute
 ----------
 
-- Issue Tracker: https://github.com/collective/imio.gdpr/issues
-- Source Code: https://github.com/collective/imio.gdpr
-- Documentation: https://docs.plone.org/foo/bar
+- Issue Tracker: https://github.com/IMIO/imio.gdpr/issues
+- Source Code: https://github.com/IMIO/imio.gdpr
+- Documentation: https://docs.imio.be/
 
 
 Support
