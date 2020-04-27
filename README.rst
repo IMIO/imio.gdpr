@@ -40,7 +40,11 @@ Translations
 
 This product has been translated into
 
-- Klingon (thanks, K'Plai)
+- French.
+
+- Nederlands.
+
+- Spanish.
 
 
 Installation

@@ -5,6 +5,8 @@ Changelog
 1.0.5 (unreleased)
 ------------------
 
+- Add Spanish translation
+  [macagua]
 - Avoid UnicodeEncodeError if gdpr text browser view is already Unicode
   [laulaz]
 
