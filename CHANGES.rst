@@ -5,6 +5,10 @@ Changelog
 1.0.5 (unreleased)
 ------------------
 
+- Add Transifex.net service integration to manage the translation process.
+  [macagua]
+- Add Spanish translation
+  [macagua]
 - Avoid UnicodeEncodeError if gdpr text browser view is already Unicode
   [laulaz]
 
