@@ -1,0 +1,10 @@
+[main]
+host = https://www.transifex.com
+
+[plonegov-imio.imio-gdpr-pot]
+file_filter = src/imio/gdpr/locales/<lang>/LC_MESSAGES/imio.gdpr.po
+minimum_perc = 0
+source_file = src/imio/gdpr/locales/imio.gdpr.pot
+source_lang = en
+type = PO
+
