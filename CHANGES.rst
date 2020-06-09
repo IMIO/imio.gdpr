@@ -5,6 +5,12 @@ Changelog
 1.0.5 (unreleased)
 ------------------
 
+- Revert "Fix missing dependency (breaks cpskin.core tests)"
+  [mpeeters]
+
+- Remove unwanted dependencies
+  [mpeeters]
+
 - Avoid UnicodeEncodeError if gdpr text browser view is already Unicode
   [laulaz]
 
