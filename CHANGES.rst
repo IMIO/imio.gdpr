@@ -2,7 +2,7 @@ Changelog
 =========
 
 
-1.0.5 (unreleased)
+1.1.0 (2020-06-09)
 ------------------
 
 - Revert "Fix missing dependency (breaks cpskin.core tests)"
