@@ -1,5 +1,6 @@
 # -*- coding: utf-8 -*-
 """Init and utils."""
+from six import text_type
 from plone import api
 from Products.PortalTransforms.libtransforms.utils import bodyfinder
 from zope.i18nmessageid import MessageFactory
@@ -33,7 +34,7 @@ def get_default_text(context):
         )
         if view is not None:
             text = bodyfinder(view.index()).strip()
-            if not isinstance(text, unicode):
+            if not isinstance(text, text_type):
                 text = text.decode("utf-8")
             return text
     return u''
