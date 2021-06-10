@@ -5,7 +5,8 @@ Changelog
 1.1.1 (unreleased)
 ------------------
 
-- Nothing changed yet.
+- Fix unicode error in Plone52
+  [boulch]
 
 
 1.1.0 (2020-06-09)
