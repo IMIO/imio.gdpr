@@ -29,11 +29,16 @@ msgstr "Installs le module imio.gdpr"
 #: ../browser/controlpanel.py:12
 msgid "Show GDPR explanation."
 msgstr ""
-"Le texte ci-dessous peut être surchargé en créant des documents avec les identifiants suivants à la racine du site:<br />\n"
+"Les textes ci-dessous peuvent être surchargés en créant des documents avec les identifiants suivants à la racine du site:<br />\n"
+"<strong>Mentions légales :</strong><br />\n"
 "- gdpr-explanation<br />\n"
 "- mentions-legales<br />\n"
 "- mentions-legales-nl<br />\n"
 "- mentions-legales-en<br />\n"
+"<strong>Politique de cookies :</strong><br />\n"
+"- cookies-policy<br />\n"
+"- cookies-policy-nl<br />\n"
+"- cookies-policy-en<br />\n"
 "C'est surtout utile pour les sites multilingues."
 
 #: ../configure.zcml:38
@@ -54,7 +59,7 @@ msgstr ""
 #: ../interfaces.py:48
 #: ../upgrades.py:35
 msgid "help_cookies_text"
-msgstr ""
+msgstr "Le texte ci-dessous pourra être accessible via un lien mis manuellement dans le site ou dans le popup d'acceptation des cookies."
 
 #. Default: "Is text is not ready, it should not be visible"
 #: ../interfaces.py:39
@@ -83,7 +88,7 @@ msgstr "Publier le texte"
 #: ../interfaces.py:47
 #: ../upgrades.py:34
 msgid "title_cookies_text"
-msgstr ""
+msgstr "Politique de cookies"
 
 #. Default: "Body text"
 #: ../interfaces.py:29
