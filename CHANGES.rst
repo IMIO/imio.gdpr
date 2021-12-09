@@ -5,7 +5,8 @@ Changelog
 1.1.2 (unreleased)
 ------------------
 
-- Nothing changed yet.
+- Add cookies policy default text & logic (same as legal mentions)
+  [laulaz]
 
 
 1.1.1 (2021-06-10)

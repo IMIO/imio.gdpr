@@ -11,7 +11,7 @@ from plone.app.textfield.value import RichTextValue
 import unittest
 
 
-class TesViews(unittest.TestCase):
+class TestGDPRView(unittest.TestCase):
     """Test that imio.gdpr is properly installed."""
 
     layer = IMIO_GDPR_INTEGRATION_TESTING
@@ -70,7 +70,6 @@ class TesViews(unittest.TestCase):
         )
         view = view.__of__(self.portal)
         self.assertTrue(view())
-        # import ipdb; ipdb.set_trace()
         self.assertTrue(u'administration communale' in view())
         setRoles(self.portal, TEST_USER_ID, roles_before)
         logout()
