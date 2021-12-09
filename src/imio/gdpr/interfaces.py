@@ -1,6 +1,7 @@
 # -*- coding: utf-8 -*-
 from imio.gdpr import _
 from imio.gdpr import get_default_text
+from imio.gdpr import get_default_cookies_text
 from imio.gdpr import IS_PLONE4
 from plone.autoform import directives as form
 from plone.supermodel import model
@@ -19,8 +20,11 @@ class IGDPRSettings(model.Schema):
         # IS_PLONE4: remove on deprecation of Plone 4.3
         from plone.app.z3cform.wysiwyg import WysiwygFieldWidget
         form.widget('text', WysiwygFieldWidget)
+        form.widget('cookies_text', WysiwygFieldWidget)
     else:
         form.widget('text', klass='pat-tinymce')
+        form.widget('cookies_text', klass='pat-tinymce')
+
     text = schema.Text(
         title=_(u'title_text', default=u'Body text'),
         description=_(
@@ -37,4 +41,13 @@ class IGDPRSettings(model.Schema):
             default=u'Is text is not ready, it should not be visible'),
         required=True,
         default=False,
+    )
+
+    cookies_text = schema.Text(
+        title=_(u'title_cookies_text', default=u'Cookies text'),
+        description=_(
+            u'help_cookies_text',
+            default=u'The text of the Cookies Policy page.'),
+        required=True,
+        defaultFactory=get_default_cookies_text,
     )

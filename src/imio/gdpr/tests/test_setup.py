@@ -32,12 +32,18 @@ class TestSetup(unittest.TestCase):
             IImioGdprLayer,
             utils.registered_layers())
 
-    def test_default_value(self):
+    def test_default_values(self):
         record = api.portal.get_registry_record(
             'text',
             interface=IGDPRSettings
         )
         self.assertIn(u'<h2>D\xe9claration relative', record)
+
+        record = api.portal.get_registry_record(
+            'cookies_text',
+            interface=IGDPRSettings
+        )
+        self.assertIn(u"<h1>Politique d'utilisation des cookies", record)
 
 
 class TestUninstall(unittest.TestCase):

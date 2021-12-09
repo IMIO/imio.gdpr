@@ -18,6 +18,7 @@
       directory="static"
       />
 
+  <!-- Legal mentions views -->
   <browser:view
       for="*"
       name="gdpr-view"
@@ -30,10 +31,26 @@
       for="*"
       name="default_gdpr_text"
       permission="zope2.Public"
-      class=".views.DefaultPage"
+      class=".views.DefaultGDPRPage"
       />
 
+  <!-- Cookies views -->
+  <browser:view
+      for="*"
+      name="cookies-view"
+      permission="zope2.Public"
+      layer="imio.gdpr.interfaces.IImioGdprLayer"
+      class=".views.CookiesView"
+      />
 
+  <browser:page
+      for="*"
+      name="default_cookies_text"
+      permission="zope2.Public"
+      class=".views.DefaultCookiesPage"
+      />
+
+  <!-- Control panel configlet -->
   <browser:page
       name="gdpr-settings"
       for="Products.CMFPlone.interfaces.IPloneSiteRoot"

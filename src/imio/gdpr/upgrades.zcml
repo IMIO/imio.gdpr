@@ -12,7 +12,6 @@
     handler=".upgrades.reload_gs_profile"
     />
 
-
   <genericsetup:upgradeStep
     source="1001"
     destination="1002"
@@ -22,5 +21,13 @@
     handler=".upgrades.udpate_default_template"
     />
 
+  <genericsetup:upgradeStep
+    source="1002"
+    destination="1003"
+    title="Add cookie policy text record"
+    description=""
+    profile="imio.gdpr:default"
+    handler=".upgrades.add_cookie_policy"
+    />
 
 </configure>
