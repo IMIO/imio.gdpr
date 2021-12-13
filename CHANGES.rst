@@ -2,8 +2,8 @@ Changelog
 =========
 
 
-1.1.2 (unreleased)
-------------------
+1.2 (2021-12-13)
+----------------
 
 - Add cookies policy default text & logic (same as legal mentions)
   [laulaz]
