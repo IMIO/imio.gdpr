@@ -5,7 +5,8 @@ Changelog
 1.2.1 (unreleased)
 ------------------
 
-- Nothing changed yet.
+- Override a plone.app.registry template to have structured (html) description
+  [boulch]
 
 
 1.2 (2021-12-13)
