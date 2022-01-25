@@ -5,6 +5,8 @@ Changelog
 1.2.1 (unreleased)
 ------------------
 
+- Add icons for control panel settings (Plone5 / 6 size)
+  [boulch]
 - Override a plone.app.registry template to have structured (html) description
   [boulch]
 
