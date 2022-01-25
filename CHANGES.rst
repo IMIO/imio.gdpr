@@ -2,7 +2,7 @@ Changelog
 =========
 
 
-1.2.1 (unreleased)
+1.2.1 (2022-01-25)
 ------------------
 
 - Add icons for control panel settings (Plone5 / 6 size)
