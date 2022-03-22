@@ -2,7 +2,7 @@ Changelog
 =========
 
 
-1.2.2 (unreleased)
+1.2.2 (2022-03-22)
 ------------------
 
 - Remove plone.app.registry template override as it is now released:
