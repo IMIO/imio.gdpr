@@ -56,7 +56,7 @@
       for="Products.CMFPlone.interfaces.IPloneSiteRoot"
       class="imio.gdpr.browser.controlpanel.GDPRSettingsControlPanel"
       layer="imio.gdpr.interfaces.IImioGdprLayer"
-      permission="cmf.ManagePortal"
+      permission="imio.gdpr.ManageControlPanel"
       />
 
 </configure>

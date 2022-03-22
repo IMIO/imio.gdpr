@@ -30,4 +30,13 @@
     handler=".upgrades.add_cookie_policy"
     />
 
+  <genericsetup:upgradeDepends
+    source="1003"
+    destination="1004"
+    title="Add specific controlpanel permission"
+    description=""
+    profile="imio.gdpr:default"
+    import_steps="controlpanel"
+    />
+
 </configure>

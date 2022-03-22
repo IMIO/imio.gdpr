@@ -14,8 +14,8 @@
         url_expr="string:${portal_url}/@@gdpr-settings"
         icon_expr="string:$portal_url/++resource++imio.gdpr/gdpr.png"
         visible="True"
-        i18n:attributes="title">
-            <permission>Manage portal</permission>
+	      i18n:attributes="title">
+	    <permission>imio.gdpr: Manage control panel</permission>
     </configlet>
 
 </object>
