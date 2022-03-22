@@ -5,6 +5,10 @@ Changelog
 1.2.2 (unreleased)
 ------------------
 
+- Remove plone.app.registry template override as it is now released:
+  Plone 6.0.0a3 / plone.app.registry 2.0.0a7
+  [laulaz]
+
 - Add specific controlpanel permission and give this permission to site administrator
   [boulch]
 
@@ -14,6 +18,7 @@ Changelog
 
 - Add icons for control panel settings (Plone5 / 6 size)
   [boulch]
+
 - Override a plone.app.registry template to have structured (html) description
   [boulch]
 
