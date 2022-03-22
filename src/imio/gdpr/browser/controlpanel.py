@@ -8,8 +8,8 @@ class GDPRSettingsEditForm(controlpanel.RegistryEditForm):
     """Control panel edit form."""
 
     schema = IGDPRSettings
-    label = _(u'GDPR settings')
-    description = _(u'Show GDPR explanation.')
+    label = _("GDPR settings")
+    description = _("Show GDPR explanation.")
 
     def updateFields(self):
         super(GDPRSettingsEditForm, self).updateFields()

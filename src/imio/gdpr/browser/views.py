@@ -8,17 +8,17 @@ from Products.Five.browser.pagetemplatefile import ViewPageTemplateFile
 
 class DefaultGDPRPage(BrowserView):
 
-    index = ViewPageTemplateFile('default_gdpr_text.pt')
+    index = ViewPageTemplateFile("default_gdpr_text.pt")
 
 
 class DefaultCookiesPage(BrowserView):
 
-    index = ViewPageTemplateFile('default_cookies_text.pt')
+    index = ViewPageTemplateFile("default_cookies_text.pt")
 
 
 class BaseView(BrowserView):
 
-    index = ViewPageTemplateFile('view.pt')
+    index = ViewPageTemplateFile("view.pt")
     default_filenames = []
     text_record = ""
 
@@ -35,7 +35,7 @@ class BaseView(BrowserView):
         return self.index()
 
     def content(self):
-        text = api.portal.get_registry_record(self.text_record, default='')
+        text = api.portal.get_registry_record(self.text_record, default="")
         return text
 
 

@@ -8,21 +8,23 @@ from zope.interface import provider
 from zope.schema.interfaces import IContextAwareDefaultFactory
 
 
-_ = MessageFactory('imio.gdpr')
+_ = MessageFactory("imio.gdpr")
 
-HAS_PLONE_5_AND_MORE = api.env.plone_version().startswith('5') or api.env.plone_version().startswith('6')
+HAS_PLONE_5_AND_MORE = api.env.plone_version().startswith(
+    "5"
+) or api.env.plone_version().startswith("6")
 
 DEFAULT_GDPR_FILES = [
-    'gdpr-explanation',
-    'mentions-legales',
-    'mentions-legales-nl',
-    'mentions-legales-en',
+    "gdpr-explanation",
+    "mentions-legales",
+    "mentions-legales-nl",
+    "mentions-legales-en",
 ]
 
 DEFAULT_COOKIES_FILES = [
-    'cookies-policy',
-    'cookies-policy-nl',
-    'cookies-policy-en',
+    "cookies-policy",
+    "cookies-policy-nl",
+    "cookies-policy-en",
 ]
 
 
@@ -31,26 +33,22 @@ def get_text_from_view(view_name):
     Text get from a browser view template <body> tag
     """
     portal = api.portal.get()
-    request = getattr(portal, 'REQUEST', None)
+    request = getattr(portal, "REQUEST", None)
     if request is not None:
-        view = api.content.get_view(
-            name=view_name,
-            context=portal,
-            request=request
-        )
+        view = api.content.get_view(name=view_name, context=portal, request=request)
         if view is not None:
             text = bodyfinder(view.index()).strip()
             if not isinstance(text, text_type):
                 text = text.decode("utf-8")
             return text
-    return u''
+    return ""
 
 
 @provider(IContextAwareDefaultFactory)
 def get_default_text(context):
-    return get_text_from_view('default_gdpr_text')
+    return get_text_from_view("default_gdpr_text")
 
 
 @provider(IContextAwareDefaultFactory)
 def get_default_cookies_text(context):
-    return get_text_from_view('default_cookies_text')
+    return get_text_from_view("default_cookies_text")

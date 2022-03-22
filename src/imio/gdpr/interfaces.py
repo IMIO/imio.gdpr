@@ -19,35 +19,35 @@ class IGDPRSettings(model.Schema):
     if not HAS_PLONE_5_AND_MORE:
         # remove on deprecation of Plone 4.3
         from plone.app.z3cform.wysiwyg import WysiwygFieldWidget
-        form.widget('text', WysiwygFieldWidget)
-        form.widget('cookies_text', WysiwygFieldWidget)
+
+        form.widget("text", WysiwygFieldWidget)
+        form.widget("cookies_text", WysiwygFieldWidget)
     else:
-        form.widget('text', klass='pat-tinymce')
-        form.widget('cookies_text', klass='pat-tinymce')
+        form.widget("text", klass="pat-tinymce")
+        form.widget("cookies_text", klass="pat-tinymce")
 
     text = schema.Text(
-        title=_(u'title_text', default=u'Body text'),
-        description=_(
-            u'help_text',
-            default=u'The text of the GDPR explanation.'),
+        title=_("title_text", default="Body text"),
+        description=_("help_text", default="The text of the GDPR explanation."),
         required=True,
         defaultFactory=get_default_text,
     )
 
     is_text_ready = schema.Bool(
-        title=_(u'is_text_ready_text', default=u'Is text ready ?'),
+        title=_("is_text_ready_text", default="Is text ready ?"),
         description=_(
-            u'help_is_text_ready',
-            default=u'Is text is not ready, it should not be visible'),
+            "help_is_text_ready",
+            default="Is text is not ready, it should not be visible",
+        ),
         required=True,
         default=False,
     )
 
     cookies_text = schema.Text(
-        title=_(u'title_cookies_text', default=u'Cookies text'),
+        title=_("title_cookies_text", default="Cookies text"),
         description=_(
-            u'help_cookies_text',
-            default=u'The text of the Cookies Policy page.'),
+            "help_cookies_text", default="The text of the Cookies Policy page."
+        ),
         required=True,
         defaultFactory=get_default_cookies_text,
     )
