@@ -2,7 +2,7 @@
 from imio.gdpr import _
 from imio.gdpr import get_default_text
 from imio.gdpr import get_default_cookies_text
-from imio.gdpr import IS_PLONE4
+from imio.gdpr import HAS_PLONE_5_AND_MORE
 from plone.autoform import directives as form
 from plone.supermodel import model
 from zope import schema
@@ -16,8 +16,8 @@ class IImioGdprLayer(IDefaultBrowserLayer):
 class IGDPRSettings(model.Schema):
     """Schema for the control panel form."""
 
-    if IS_PLONE4:
-        # IS_PLONE4: remove on deprecation of Plone 4.3
+    if not HAS_PLONE_5_AND_MORE:
+        # remove on deprecation of Plone 4.3
         from plone.app.z3cform.wysiwyg import WysiwygFieldWidget
         form.widget('text', WysiwygFieldWidget)
         form.widget('cookies_text', WysiwygFieldWidget)

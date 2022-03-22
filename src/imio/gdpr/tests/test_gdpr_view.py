@@ -68,7 +68,6 @@ class TestGDPRView(unittest.TestCase):
             context=self.portal,
             request=self.portal.REQUEST,
         )
-        view = view.__of__(self.portal)
         self.assertTrue(view())
         self.assertTrue(u'administration communale' in view())
         setRoles(self.portal, TEST_USER_ID, roles_before)

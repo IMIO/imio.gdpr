@@ -68,7 +68,6 @@ class TestCookiesView(unittest.TestCase):
             context=self.portal,
             request=self.portal.REQUEST,
         )
-        view = view.__of__(self.portal)
         self.assertTrue(view())
         self.assertTrue(u'Utilisation des cookies' in view())
         setRoles(self.portal, TEST_USER_ID, roles_before)
