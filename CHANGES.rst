@@ -5,7 +5,8 @@ Changelog
 1.2.3 (unreleased)
 ------------------
 
-- Nothing changed yet.
+- Add support of German language for legal gdpr text and cookies policy
+  [boulch]
 
 
 1.2.2 (2022-03-22)

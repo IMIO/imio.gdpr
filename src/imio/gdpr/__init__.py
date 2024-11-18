@@ -19,12 +19,14 @@ DEFAULT_GDPR_FILES = [
     "mentions-legales",
     "mentions-legales-nl",
     "mentions-legales-en",
+    "mentions-legales-de",
 ]
 
 DEFAULT_COOKIES_FILES = [
     "cookies-policy",
     "cookies-policy-nl",
     "cookies-policy-en",
+    "cookies-policy-de",
 ]
 
 
