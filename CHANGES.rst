@@ -2,7 +2,7 @@ Changelog
 =========
 
 
-1.2.3 (unreleased)
+1.2.3 (2024-11-18)
 ------------------
 
 - Add support of German language for legal gdpr text and cookies policy
