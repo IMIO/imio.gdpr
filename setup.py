@@ -14,7 +14,7 @@ long_description = '\n\n'.join([
 
 setup(
     name='imio.gdpr',
-    version='1.2.3',
+    version='1.2.4.dev0',
     description="View and configuration panel to set GDPR information",
     long_description=long_description,
     # Get more from https://pypi.python.org/pypi?%3Aaction=list_classifiers
