@@ -5,7 +5,8 @@ Changelog
 1.2.4 (unreleased)
 ------------------
 
-- Nothing changed yet.
+- Add German translations
+  [laulaz]
 
 
 1.2.3 (2024-11-18)
