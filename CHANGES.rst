@@ -5,6 +5,10 @@ Changelog
 1.2.4 (unreleased)
 ------------------
 
+- Use native namespace packages (PEP 420). Remove the `pkg_resources` namespace declaration.
+  This version needs Python 3.10 or later and Plone 6.2.
+  [boulch]
+
 - Add German translations
   [laulaz]
 
