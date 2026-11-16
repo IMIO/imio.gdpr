@@ -1,8 +1,8 @@
 # -*- coding: utf-8 -*-
 
 from imio.gdpr import _
-from imio.gdpr import get_default_text
 from imio.gdpr import get_default_cookies_text
+from imio.gdpr import get_default_text
 from imio.gdpr.interfaces import IGDPRSettings
 from plone import api
 from plone.app.upgrade.utils import loadMigrationProfile

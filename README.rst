@@ -26,13 +26,10 @@ Documentation
 
 Full documentation for end users can be found in the "docs" folder, and is also available online at http://docs.plone.org/foo/bar
 
-This package is tested using Travis CI. The current status is :
+This package is tested using GitHub Actions. The current status is :
 
-.. image:: https://travis-ci.org/IMIO/imio.gdpr.png
-    :target: http://travis-ci.org/IMIO/imio.gdpr
-
-.. image:: https://coveralls.io/repos/github/IMIO/imio.gdpr/badge.svg?branch=master
-    :target: https://coveralls.io/github/IMIO/imio.gdpr?branch=master
+.. image:: https://github.com/IMIO/imio.gdpr/actions/workflows/plone-package-test-gha.yml/badge.svg
+    :target: https://github.com/IMIO/imio.gdpr/actions/workflows/plone-package-test-gha.yml
 
 
 Translations

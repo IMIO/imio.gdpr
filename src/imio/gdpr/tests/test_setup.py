@@ -1,5 +1,6 @@
 # -*- coding: utf-8 -*-
 """Setup tests for this package."""
+
 from imio.gdpr import HAS_PLONE_5_AND_MORE
 from imio.gdpr.interfaces import IGDPRSettings
 from imio.gdpr.interfaces import IImioGdprLayer

@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 from imio.gdpr import _
-from imio.gdpr import get_default_text
 from imio.gdpr import get_default_cookies_text
+from imio.gdpr import get_default_text
 from imio.gdpr import HAS_PLONE_5_AND_MORE
 from plone.autoform import directives as form
 from plone.supermodel import model

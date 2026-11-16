@@ -30,7 +30,7 @@ class BaseView(BrowserView):
         nav_root = api.portal.get_navigation_root(self.context)
         for name in self.default_filenames:
             content = getattr(nav_root, name, None)
-            if content and content.Language() == self.context.Language():
+            if content and content.language == self.context.language:
                 return self.request.response.redirect(content.absolute_url())
         return self.index()
 

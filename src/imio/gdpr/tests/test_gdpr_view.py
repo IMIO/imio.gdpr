@@ -1,5 +1,6 @@
 # -*- coding: utf-8 -*-
 """Setup tests views of this package."""
+
 from AccessControl import Unauthorized
 from imio.gdpr.testing import IMIO_GDPR_INTEGRATION_TESTING
 from plone import api
