@@ -1,7 +1,6 @@
 # -*- coding: utf-8 -*-
 """Installer for the imio.gdpr package."""
 
-from setuptools import find_namespace_packages
 from setuptools import setup
 
 
@@ -36,8 +35,6 @@ setup(
     author_email='bsuttor@imio.be',
     url='https://pypi.python.org/pypi/imio.gdpr',
     license='GPL version 2',
-    packages=find_namespace_packages('src', exclude=['ez_setup']),
-    package_dir={'': 'src'},
     include_package_data=True,
     zip_safe=False,
     python_requires='>=3.10',
@@ -45,7 +42,6 @@ setup(
         # -*- Extra requirements: -*-
         'plone.api>=1.8.4',
         'Products.GenericSetup>=1.8.2',
-        'setuptools',
         'z3c.jbot',
         'plone.app.dexterity',
         'plone.schema',
