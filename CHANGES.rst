@@ -2,7 +2,7 @@ Changelog
 =========
 
 
-1.2.4 (unreleased)
+2.0.0 (2026-11-19)
 ------------------
 
 - Add a GitHub Actions workflow that runs the tests on Plone 6.2.
