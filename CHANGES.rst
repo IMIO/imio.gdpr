@@ -5,6 +5,14 @@ Changelog
 1.2.4 (unreleased)
 ------------------
 
+- Add a GitHub Actions workflow that runs the tests on Plone 6.2.
+  Format the code with black and isort. Fix the flake8 warnings.
+  [boulch]
+
+- Use native namespace packages (PEP 420). Remove the `pkg_resources` namespace declaration.
+  This version needs Python 3.10 or later and Plone 6.2.
+  [boulch]
+
 - Add German translations
   [laulaz]
 

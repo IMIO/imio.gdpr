@@ -1,12 +1,12 @@
 # -*- coding: utf-8 -*-
 """Init and utils."""
-from six import text_type
+
 from plone import api
 from Products.PortalTransforms.libtransforms.utils import bodyfinder
+from six import text_type
 from zope.i18nmessageid import MessageFactory
 from zope.interface import provider
 from zope.schema.interfaces import IContextAwareDefaultFactory
-
 
 _ = MessageFactory("imio.gdpr")
 

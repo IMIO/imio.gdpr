@@ -1,8 +1,6 @@
 # -*- coding: utf-8 -*-
 from imio.gdpr.interfaces import IImioGdprLayer
-from plone.app.contenttypes.testing import (
-    PLONE_APP_CONTENTTYPES_FIXTURE as PLONE_FIXTURE,
-)
+from plone.app.contenttypes.testing import PLONE_APP_CONTENTTYPES_FIXTURE
 from plone.app.robotframework.testing import REMOTE_LIBRARY_BUNDLE_FIXTURE
 from plone.app.testing import applyProfile
 from plone.app.testing import FunctionalTesting
@@ -16,7 +14,7 @@ import imio.gdpr
 
 class ImioGdprLayer(PloneWithPackageLayer):
 
-    defaultBases = (PLONE_FIXTURE,)
+    defaultBases = (PLONE_APP_CONTENTTYPES_FIXTURE,)
 
     def setUpZope(self, app, configurationContext):
         # Load any other ZCML that is required for your tests.
